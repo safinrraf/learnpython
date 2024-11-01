@@ -16,10 +16,14 @@ def log(message):
 
 
 def main(argv):
-    tuple = (1,"a",True, False, "Hello")
-    log(tuple)
-    log(tuple[0:3])
-
+    tuple_var1 = (1, "a", True, False, "Hello")
+    dic_var1 = {"Apple":10,"Mango":11,"Lichi":1234545678945678765567890}
+    log(dic_var1)
+    dic_var1["Banana"] = 1234
+    log(dic_var1)
+    dic_var1["Banana"] = "1"
+    log(type(dic_var1["Banana"]))
+    log(type(dic_var1["Apple"]))
 
 if __name__ == "__main__":
     logging.basicConfig(format=LOG_FORMAT, level=logging.DEBUG)
